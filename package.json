@@ -1,0 +1,25 @@
+{
+  "name": "uniapp-template",
+  "version": "1.0.0",
+  "author": "gzh <1713139335@qq.com>",
+  "description": "uniapp基础模板",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/codergzh/uniapp-template.git"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@dcloudio/uni-helper-json": "^1.0.5",
+    "@types/html5plus": "^1.0.1",
+    "@types/uni-app": "^1.4.3",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.8.0",
+    "eslint-plugin-vue": "^6.2.2"
+  }
+}

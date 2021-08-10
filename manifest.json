@@ -1,0 +1,121 @@
+{
+    "name" : "uniapp-template",
+    "appid" : "__UNI__EA846E5",
+    "description" : "",
+    "versionName" : "1.0.0",
+    "versionCode" : "100",
+    "transformPx" : false,
+    /* 网络超时时间 单位毫秒 */
+    "networkTimeout" : {
+        "request" : 10000, // uni.request 的超时时间
+        "connectSocket" : 10000, // uni.connectSocket 的超时时间
+        "uploadFile" : 3600000, // uni.uploadFile 的超时时间，单位毫秒
+        "downloadFile" : 3600000 // uni.downloadFile 的超时时间，单位毫秒
+    },
+    "debug" : true,
+    /* 5+App特有相关 */
+    "app-plus" : {
+        "usingComponents" : true,
+        "splashscreen" : {
+            "alwaysShowBeforeRender" : true,
+            "waiting" : true,
+            "autoclose" : true,
+            "delay" : 0
+        },
+        /* 模块配置 */
+        "modules" : {},
+        /* 应用发布信息 */
+        "distribute" : {
+            /* android打包配置 */
+            "android" : {
+                "permissions" : [
+                    "<uses-feature android:name=\"android.hardware.camera\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CALL_PHONE\"/>",
+                    "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+                    "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
+                    "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>",
+                    "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+                    "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
+                ]
+            },
+            /* ios打包配置 */
+            "ios" : {},
+            /* SDK配置 */
+            "sdkConfigs" : {
+                "oauth" : {}
+            },
+            "splashscreen" : {
+                "ios" : {
+                    "iphone" : {
+                        "portrait-896h@3x" : "/Users/donghao/Documents/projects/suijinhui/穗金汇启动页/1242-2688.png",
+                        "landscape-896h@3x" : "",
+                        "iphonex" : "/Users/donghao/Documents/projects/suijinhui/穗金汇启动页/1125-2436.png",
+                        "portrait-896h@2x" : "/Users/donghao/Documents/projects/suijinhui/穗金汇启动页/828-1792.png",
+                        "retina55" : "/Users/donghao/Documents/projects/suijinhui/穗金汇启动页/1242-2208.png",
+                        "retina47" : "/Users/donghao/Documents/projects/suijinhui/穗金汇启动页/750-1334.png",
+                        "retina40" : "/Users/donghao/Documents/projects/suijinhui/穗金汇启动页/640-1136.png",
+                        "retina35" : "/Users/donghao/Documents/projects/suijinhui/穗金汇启动页/640-960.png"
+                    }
+                }
+            }
+        },
+        "error" : {
+            "url" : ""
+        }
+    },
+    /* 快应用特有相关 */
+    "quickapp" : {},
+    /* 小程序特有相关 */
+    "mp-weixin" : {
+        "appid" : "",
+        "setting" : {
+            "urlCheck" : false,
+            "minified" : true,
+            "es6" : true,
+            "postcss" : true
+        },
+        "usingComponents" : true,
+        "packOptions" : {
+            /* 过滤图片资源 */
+            "ignore" : [
+                {
+                    "type" : "folder",
+                    "value" : "static/images"
+                }
+            ]
+        }
+    },
+    "mp-alipay" : {
+        "usingComponents" : true
+    },
+    "mp-baidu" : {
+        "usingComponents" : true
+    },
+    "mp-toutiao" : {
+        "usingComponents" : true
+    },
+    "h5" : {
+        "router" : {
+            "mode" : "history"
+        },
+        "optimization" : {
+            "treeShaking" : {
+                "enable" : true
+            }
+        }
+    }
+}
